@@ -16,6 +16,10 @@
     
     
     
+    <link rel='stylesheet' href='https://unpkg.com/prismjs@1.6.0/themes/prism.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css'>
+    
     
     
     
@@ -109,6 +113,31 @@
         <a href="https://x.com/SnowyOnBase" class="u-active-palette-1-light-3 u-border-7 u-border-active-black u-border-black u-border-hover-palette-1-light-3 u-btn u-btn-round u-button-style u-hover-black u-palette-1-base u-radius u-btn-3">TWITER</a>
       </div>
     </section>
+
+    <body>
+      <!-- partial:index.partial.html -->
+      <div id="app" v-cloak>
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="form-control wizard-form-control d-flex align-items-center testing-code px-20px mb-10px">
+                          <span class="title">CA:</span>
+                          <span class="code text-red">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
+                          <span class="btn btn-info text-white copy-btn ml-auto" @click.stop.prevent="copyTestingCode">
+                    Copy
+                  </span>
+                          <input type="hidden" id="testing-code" :value="testingCode">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- partial -->
+        <script src='https://unpkg.com/vue@2.3.2/dist/vue.js'></script>
+      <script src='https://unpkg.com/prismjs@1.6.0/prism.js'></script><script  src="./script.js"></script>
+      
+      </body>
+
 
     <section>
 
