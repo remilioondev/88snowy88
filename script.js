@@ -1,7 +1,7 @@
 new Vue({
     el: "#app",
     data: {
-        testingCode: "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+        testingCode: "0x176edea60456dc127714b93cd1ce90a59cc33f31",
     },
     methods: {
         copyTestingCode () {
